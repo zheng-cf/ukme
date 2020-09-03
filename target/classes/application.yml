@@ -1,0 +1,25 @@
+server:
+  port: 8060
+spring:
+  thymeleaf:
+    cache: false
+  jpa:
+    database: mysql
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3307/any?serverTimezone=CTT
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+logging:
+  level:
+    root: INFO
+    org.hibernate: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+    com.springms: DEBUG
